@@ -6,7 +6,7 @@ var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
 
 function getTranslationURL(text){
 
-    return serverURL + "?" + "text=" + text
+    return serverURL + "?" + "text=" + text;
 
 }
 function errorHandler(error){
