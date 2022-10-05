@@ -9,11 +9,11 @@ function getTranslationURL(text){
     return serverURL + "?" + "text=" + text;
 
 }
-function errorHandler(error){
+/*function errorHandler(error){
     console.log("error occured",error)
     alert("something went wrong the server please after some time ")
 
-}
+}*/
 
 
 
@@ -26,7 +26,7 @@ function clickhandler(){
     fetch( getTranslationURL(inputText))
     .then(response => response.json())
     .then(json => console.log(json.contents.translated))
-    .catch(errorHandler)
+   // .catch(errorHandler)
     outputDiv.innerText = "welcome" + txtInput.value
     
     };
