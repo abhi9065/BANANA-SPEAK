@@ -13,7 +13,7 @@ function getTranslationURL(text) {
     console.log("error occured",error)
     alert("something went wrong the server please after some time ")
 
-}*/
+}*/ 
 
 
 
@@ -25,7 +25,7 @@ function clickhandler(){
     
     fetch(getTranslationURL(inputText))
     .then(response => response.json())
-    .then(json => { json.contents.translated
+    .then(json => {
      var translatedText =  json.contents.translated
     outputDiv.innerText =  translatedText } )
     
